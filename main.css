@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=PT+Sans:wght@700&family=Roboto:wght@300&display=swap');
+
+/* COLOUR THEME
+#2B3B50 (foundation colour) - navy blue
+#EA4F5B (accent colour) - pink
+#54B4B4 (primary colour) - teal
+#F0C251 (accent colour) - gold
+#F3F3F3 (foundation colour) - grey
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: #F3F3F3;
+    margin: 0;
+}
+
+/* HOME PAGE */
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(33, 36, 46, 0.7),rgba(33, 36, 46, 0.7)), url(img/sergei-akulich-unsplash.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.footer {
+    background-color: rgba(33, 36, 46, 0.7);
+    min-height: 20vh;
+    position: relative;
+    width: 100%;
+}
+
+/* nav bar - start */
+/* navigation menu */
+.navbar {
+    background-color: #2B3B50;
+    display: flex;
+    overflow: hidden;
+}
+/* navigation links */
+.navbar a {
+    color: white;
+    flex: 1;
+    float: left;
+    font-size: 20px;
+    padding: 16px 80px;
+    text-align: center;
+    text-decoration: none;
+}
+/* button color when on a certain page */
+.active {
+    background-color: #54B4B4;
+}
+/* background color to nav links on hover */
+.navbar a:hover{
+    background-color: #F0C251;
+    color: black;
+    padding: 16px inherit;
+}
+/* NAV BAR - end */
+
+/* HOME PAGE - start */
+.welcome {
+    width: 90%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.welcome h1 {
+    color: #F0C251;
+}
+.welcome p {
+    color: white;
+}
+
+
+
+
+@media screen and (min-width: 800px) {
+    .container {
+      margin: 1em 2em;
+    }
+  }
+
+/* PAGE HEADINGS/STYLINGS - start */
+/* heading 1 */
+h1 {
+    color: #2B3B50;
+    font-family: 'Josefin Sans Black', sans-serif;
+    font-size: 40px;
+}
+/* heading 2 */
+h2 {
+    color: #54B4B4;
+    font-family: 'PT Sans', sans;
+    font-size: 28px;
+}
+/* paragraph */
+p, li {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+}
+
+span.keywords {
+    color:#EA4F5B;
+    font-weight: bold;
+}
+/* PAGE HEADINGS/STYLINGS - end */
+
+
+
+/*
+table {
+    padding: 10;
+    text-align: center;
+    width: 80%;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td {
+    width:
+}
+
+h2.links a {
+    color: #2B3B50;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+h2.links a:hover {
+    color: #54B4B4;
+    text-decoration: underline;
+}
+*/
+
+/* secondary pages - paragraph text */
+
+
+/*
+td.saving-blurb {
+    background-color: white;
+    border: solid 3px black;
+    left: 200px;
+    height: 200px;
+    position: absolute;
+    top: 38%;
+    width: 300px;
+}*/
+
+/* HOME PAGE BLURBS - end */
+
+
+
+/* HEADING 1 FONTS
+font-family: 'Archivo Black', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Fira Sans', sans-serif;
+*/
+
+/* HEADING 2 FONTS
+font-family: 'PT Sans', sans-serif;
+font-family: 'PT Serif', serif;
+*/
+
+/* PARAGRAPH FONTS
+font-family: 'Lato', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
