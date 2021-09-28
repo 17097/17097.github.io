@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=PT+Sans:wght@700&family=Roboto:wght@300&display=swap');
 
-/* COLOUR THEME
-#2B3B50 (foundation colour) - navy blue
-#EA4F5B (accent colour) - pink
-#54B4B4 (primary colour) - teal
-#F0C251 (accent colour) - gold
-#F3F3F3 (foundation colour) - grey
-*/
-
 * {
     margin: 0;
     padding: 0;
@@ -80,15 +72,6 @@ html {
     color: white;
 }
 
-
-
-
-@media screen and (min-width: 800px) {
-    .container {
-      margin: 1em 2em;
-    }
-  }
-
 /* PAGE HEADINGS/STYLINGS - start */
 /* heading 1 */
 h1 {
@@ -114,67 +97,3 @@ span.keywords {
     font-weight: bold;
 }
 /* PAGE HEADINGS/STYLINGS - end */
-
-
-
-/*
-table {
-    padding: 10;
-    text-align: center;
-    width: 80%;
-}
-
-.center {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-td {
-    width:
-}
-
-h2.links a {
-    color: #2B3B50;
-    font-size: 30px;
-    text-decoration: none;
-}
-
-h2.links a:hover {
-    color: #54B4B4;
-    text-decoration: underline;
-}
-*/
-
-/* secondary pages - paragraph text */
-
-
-/*
-td.saving-blurb {
-    background-color: white;
-    border: solid 3px black;
-    left: 200px;
-    height: 200px;
-    position: absolute;
-    top: 38%;
-    width: 300px;
-}*/
-
-/* HOME PAGE BLURBS - end */
-
-
-
-/* HEADING 1 FONTS
-font-family: 'Archivo Black', sans-serif;
-font-family: 'Josefin Sans', sans-serif;
-font-family: 'Fira Sans', sans-serif;
-*/
-
-/* HEADING 2 FONTS
-font-family: 'PT Sans', sans-serif;
-font-family: 'PT Serif', serif;
-*/
-
-/* PARAGRAPH FONTS
-font-family: 'Lato', sans-serif;
-font-family: 'Roboto', sans-serif;
-*/
