@@ -12,9 +12,9 @@
 <body>
     <!-- NAV BAR -->
     <header style="background-color:#2B3B50">
-        <nav class="nav">
+        <nav>
             <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i> <!-- close menu icon -->
+                <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="saving.html">Saving</a></li>
@@ -22,20 +22,29 @@
                     <li><a href="loans.html">Loans</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i> <!-- open menu icon -->
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
     </header>
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        function showMenu () {
+            navLinks.style.right = "0";
+        }
+        function hideMenu () {
+            navLinks.style.right = "-200px";
+        }
+    </script>
     
     <div class="content">
     <!-- INFO -->
         <h1>Saving</h1>
-        <h2>Why Does Saving Matter</h2>
-        <p>Saving matters because it will help you significantly when you are at a tough time of your life and you suddenly need some extra money to help you get through that period of time.
-        For example, a natural disaster (like a flood) might have destroyed your house. You're a bit tight on money, but you realise that you had put some money aside over the past few years for any emergency that might occur. Your emergency savings would come in handy here as you will have some money to use and pay for things like accommodation.
-        So putting some of your income aside into savings can help you feel more confident and prepared to overcome any financial shock, financial hardship or emergency situations.</p>
+        <h2>Why Does Saving Matter?</h2>
+        <p>Saving matters because it will help you significantly when you are at a tough time of your life and you suddenly need some extra money to help you get through that period of time.</p>
+        <p>By putting some of your income or your weekly pocket money aside into savings can help you feel more confident and prepared to overcome any financial problems or emergency situations.</p>
         <br>
         <h2>Set Up Your Own Savings Goal Chart</h2>
-        <ol>
+        <ol class="list">
             <li>Write a list of all the different <b>financial goals</b> that you want to achieve</li>
             <li>Decide whether the goals are short-term, midterm or long-term goals</li>
             <li>Determine how much money you will need to reach your goals and how long you have to reach your money goal. Then, divide the amount of money by month or by year. This will help you figure out how much money you will need to save each month or each year in order for you to reach your savings goal by a certain time.</li>
@@ -46,25 +55,21 @@
     <br>
 
     <!-- QUIZ -->
-        <div class="container">
-            <div id="question-container" class="hide">
-                <div id="question" class="question">Question</div>
-                <div id="answer-buttons" class="btn-grid">
-                    <button class="btn">Answer 1</button>
-                    <button class="btn">Answer 2</button>
-                    <button class="btn">Answer 3</button>
-                    <button class="btn">Answer 4</button>
-                </div>
-            </div>
-            <div class="controls">
-                <button id="start-btn" class="start-btn btn">Start</button>
-                <button id="next-btn" class="next-btn btn hide">Next</button>
+    <div class="container">
+        <div id="question-container" class="hide">
+            <div id="question" class="question">Question</div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
             </div>
         </div>
+        <div class="controls">
+            <button id="start-btn" class="start-btn btn">Start Quiz</button>
+            <button id="next-btn" class="next-btn btn hide">Next</button>
+        </div>
     </div>
-    
-    <!-- JavaScript for Quiz -->
-    <script src="script.js"></script>
 
 </body>
 </html>

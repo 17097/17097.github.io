@@ -7,32 +7,48 @@
     <title>Money Management</title>
     <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
-    <!-- NAV BAR START -->
-    <header>
-        <section class="navbar">
-            <a href="index.html">Home</a>
-            <a href="saving.html">Saving</a>
-            <a href="budgeting.html" class="active">Budgeting</a>
-            <a href="loans.html">Loans</a>
-        </section>
+    <!-- NAV BAR -->
+    <header style="background-color:#2B3B50">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="saving.html">Saving</a></li>
+                    <li><a href="budgeting.html">Budgeting</a></li>
+                    <li><a href="loans.html">Loans</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
     </header>
-    <!-- NAV BAR END -->
 
-    <h2>What Is Budgeting?</h2>
-    <p>Budgeting is where you make a plan for every dollar that you have.</p>
-    <br>
-    <h2>Why Is Budgeting Important?</h2>
-    <p>Budgeting will make you feel that you are in a position where you are in control of your money and your spendings. By putting a limit on how much you can spend on certain things, like food, you will ensure that you do not spend more than you can afford.</p>
-    <br>
-    <h2>How To Set Up Your Budgets</h2>
-    <ol>
-        <li>Identify what areas you spend too much money on (ie food). You can do this by listing all your monthly expenses/spendings.</li>
-        <li>Next, plan how much money you are willing or able to spend in an area</li>
-        <li>Each time you spend money, note it down in the relevant category and keep track of how much more money you allow yourself to spend in that area for the rest of the week/the month.</li>
-        <li>Follow and stick to your budgeting goals. This will be difficult, but it will pay off in the end.</li>
-    </ol>
+    <div class="content">
+        <h1>Budgeting</h1>
+        <h2>Budgeting and its Importance</h2>
+        <p>Budgeting is where you make a plan for every dollar that you have. Often, when budgeting, you will set a limit on how much money you can spend on something, for example, a $100 budget to spend on food every week.</p>
+        <p>Budgeting is important because it will mean that you will be in control of your own money and your spendings. By putting a limit on how much you can spend on certain things, like food, you will ensure that you do not spend more than you can afford.</p>
+        <br>
+        <h2>How To Set Up Your Budgets</h2>
+        <ol class="list">
+            <li>Identify what areas you spend too much money on (ie food). You can do this by listing all your monthly expenses/spendings.</li>
+            <li>Plan how much money you are willing or able to spend in that area</li>
+            <li>Each time you spend money, note it down in the relevant category. Keep track of how much of your budget you have already spent.</li>
+            <li>Follow and stick to your budgeting goals. This will be difficult, but it will pay off in the end.</li>
+        </ol>
+    </div>
 
-
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        function showMenu () {
+            navLinks.style.right = "0";
+        }
+        function hideMenu () {
+            navLinks.style.right = "-200px";
+        }
+    </script>
 </body>
 </html>

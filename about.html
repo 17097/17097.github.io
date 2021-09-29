@@ -6,15 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- responsive -->
     <title>Money Management</title>
     <link rel="stylesheet" href="main.css">
-    <script defer src="script.js"></script>
 </head>
 
 <body>
     <!-- NAV BAR -->
     <header style="background-color:#2B3B50">
-        <nav class="nav">
+        <nav>
             <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i> <!-- close menu icon -->
+                <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="saving.html">Saving</a></li>
@@ -22,7 +21,7 @@
                     <li><a href="loans.html">Loans</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i> <!-- open menu icon -->
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
     </header>
     
@@ -30,6 +29,16 @@
     <!-- INFO -->
         <h1>About Us</h1>
 
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        function showMenu () {
+            navLinks.style.right = "0";
+        }
+        function hideMenu () {
+            navLinks.style.right = "-200px";
+        }
+    </script>
 
 <footer>
     <section class="footer">

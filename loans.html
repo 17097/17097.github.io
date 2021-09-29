@@ -8,19 +8,39 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <!-- NAV BAR START -->
-    <header>
-        <section class="navbar">
-            <a href="index.html">Home</a>
-            <a href="saving.html">Saving</a>
-            <a href="budgeting.html">Budgeting</a>
-            <a href="loans.html" class="active">Loans</a>
-        </section>
+    <!-- NAV BAR -->
+    <header style="background-color:#2B3B50">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="saving.html">Saving</a></li>
+                    <li><a href="budgeting.html">Budgeting</a></li>
+                    <li><a href="loans.html">Loans</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
     </header>
-    <!-- NAV BAR END -->
     
-    <h2>What Is A Loan?</h2>
-    <p>A <span class="keywords">loan</span> is where you borrow money from someone, usually from a bank, which you will return back later on. I know this sounds good, but beware that this money is not free. Because banks also need to earn money they will charge you something that is called an interest when you pay back the money you borrowed. This is a certain percentage of the money that you borrow, which will be paid on top of the full amount of money that you borrow.</p>
-    <p>There are two forms of interest: <span class="keywords">variable</span> (or floating) and <span class="keywords">fixed</span>. Variable interest fluctuates (rises and falls) over time. This will mean that sometimes you may pay more interest and sometimes you may pay less. Fixed interest, as its name suggests, means that the interest rate is fixed, so you will pay the same percentage of interest back. This will be beneficial for borrowers as they will be able to predict their future payments and know how much they will need to pay.</p>
+    <div class="content">
+        <h1>Loan</h1>
+        <h2>What Is A Loan?</h2>
+        <p>A <span class="keywords">loan</span> is where you borrow money from someone, usually from a bank, which you will return back later on. I know this sounds good, but beware that this money is not free. Because banks also need to earn money they will charge you something that is called an interest when you pay back the money you borrowed. This is a certain percentage of the money that you borrow, which will be paid on top of the full amount of money that you borrow.</p>
+        <p>There are two forms of interest: <span class="keywords">variable</span> (or floating) and <span class="keywords">fixed</span>. Variable interest fluctuates (rises and falls) over time. This will mean that sometimes you may pay more interest and sometimes you may pay less. Fixed interest, as its name suggests, means that the interest rate is fixed, so you will pay the same percentage of interest back. This will be beneficial for borrowers as they will be able to predict their future payments and know how much they will need to pay.</p>
+    </div>
+
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        function showMenu () {
+            navLinks.style.right = "0";
+        }
+        function hideMenu () {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    
 </body>
 </html>

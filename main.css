@@ -9,7 +9,6 @@ html {
     background: #F3F3F3;
     margin: 0;
 }
-
 .content {
     margin: 20px auto;
     max-width: 80vw;
@@ -53,36 +52,6 @@ nav .fa {
     display: none;
 }
 
-@media(max-width: 700px) {
-    .welcome h1 {
-        font-size: 18px;
-    }
-    .nav-links ul li {
-        display: block;
-    }
-    .nav-links {
-        background: #54B4B4;
-        height: 100vh;
-        position: absolute;
-        right: -200px;
-        text-align: left;
-        top: 0;
-        transition: 1s;
-        width: 200px;
-        z-index: 2;
-    }
-    nav .fa {
-        color: white;
-        cursor: pointer;
-        display: block;
-        font-size: 22px;
-        margin: 10px;
-    }
-    .nav-links ul {
-        padding: 30px;
-    }
-}
-
 /* --- HOME PAGE --- */
 .welcome {
     width: 90%;
@@ -101,18 +70,23 @@ nav .fa {
     margin: 5px 0 50px;
     font-size: 20px;
 }
-
 /* About Us button on home page */
 .hero-btn {
     display: inline-block;
     text-decoration: none;
+    cursor: pointer;
     color: white;
     border: 1px solid white;
-    padding: 12px 34px;
+    padding: 12px 40px;
     font-size: 18px;
     background: transparent;
     position: relative;
-    cursor: pointer;
+}
+.hero-btn:hover {
+    background: white;
+    color: black;
+    opacity: 0.7;
+    transition: 0.5s;
 }
 
 /* --- QUIZ --- */
@@ -136,13 +110,6 @@ nav .fa {
     padding: 10px;
     width: 800px;
 }
-/*
-.container.correct {
-    --hue: var(--hue-correct);
-}
-.container.wrong {
-    --hue: var(--hue-wrong);
-} */
 .question {
     font-size: 20px;
     padding-top: 3vh;
@@ -186,9 +153,9 @@ nav .fa {
     padding: 10px 20px;
 }
 .controls {
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 .hide {
     display: none;
@@ -214,8 +181,7 @@ nav .fa {
     padding: 18px 0;
 }
 
-
-/* PAGE HEADINGS/STYLINGS - start */
+/* --- TEXT STYLINGS --- */
 /* heading 1 */
 h1 {
     color: #EA4F5B;
@@ -235,10 +201,51 @@ h2 {
 p{
     color: black;
     font-family: 'Roboto', sans-serif;
-    font-size: 17px;
+    font-size: 19px;
+    margin: 15px 0;
+}
+.list{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
 }
 b {
     color:black;
     text-decoration: bold 2px;
 }
-/* PAGE HEADINGS/STYLINGS - end */
+
+/* --- RESPONSIVE --- */
+@media(max-width: 700px) {
+    /* nav bar */
+    .welcome h1 {
+        font-size: 18px;
+    }
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links {
+        background: #54B4B4;
+        height: 100vh;
+        position: absolute;
+        right: -200px;
+        text-align: left;
+        top: 0;
+        transition: 1s;
+        width: 200px;
+        z-index: 2;
+    }
+    nav .fa {
+        color: white;
+        cursor: pointer;
+        display: block;
+        font-size: 22px;
+        margin: 10px;
+    }
+    .nav-links ul {
+        padding: 30px;
+    }
+    /* quiz */
+    .question {
+        font-size: 10px;
+    }
+}
