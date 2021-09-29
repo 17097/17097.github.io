@@ -6,21 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- responsive -->
     <title>Money Management</title>
     <link rel="stylesheet" href="main.css">
+    <script defer src="script.js"></script>
 </head>
+
 <body>
-    <!-- NAV BAR START -->
-    <header>
-        <section class="navbar">
-            <a href="index.html">Home</a>
-            <a href="saving.html" class="active">Saving</a>
-            <a href="budgeting.html">Budgeting</a>
-            <a href="loans.html">Loans</a>
-        </section>
+    <!-- NAV BAR -->
+    <header style="background-color:#2B3B50">
+        <nav class="nav">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i> <!-- close menu icon -->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="saving.html">Saving</a></li>
+                    <li><a href="budgeting.html">Budgeting</a></li>
+                    <li><a href="loans.html">Loans</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i> <!-- open menu icon -->
+        </nav>
     </header>
-    <!-- NAV BAR END -->
     
+    <div class="content">
     <!-- INFO -->
-    <section class="info">
+        <h1>Saving</h1>
         <h2>Why Does Saving Matter</h2>
         <p>Saving matters because it will help you significantly when you are at a tough time of your life and you suddenly need some extra money to help you get through that period of time.
         For example, a natural disaster (like a flood) might have destroyed your house. You're a bit tight on money, but you realise that you had put some money aside over the past few years for any emergency that might occur. Your emergency savings would come in handy here as you will have some money to use and pay for things like accommodation.
@@ -28,13 +36,35 @@
         <br>
         <h2>Set Up Your Own Savings Goal Chart</h2>
         <ol>
-            <li>Write a list of all the different <span class="keywords">financial goals</span> that you want to achieve</li>
+            <li>Write a list of all the different <b>financial goals</b> that you want to achieve</li>
             <li>Decide whether the goals are short-term, midterm or long-term goals</li>
             <li>Determine how much money you will need to reach your goals and how long you have to reach your money goal. Then, divide the amount of money by month or by year. This will help you figure out how much money you will need to save each month or each year in order for you to reach your savings goal by a certain time.</li>
             <li>Think of different ways that will make it easier for you to reach your savings goal. This could be things like reducing your expenses (how much money you spend), earning some extra pocket money by getting a part-time job or by doing chores around the house, or even selling your unused or unwanted items, that are still in good condition, online (like on TradeMe).</li>
         </ol>
         <p>By doing all this, you will have a clear target as to what you are saving towards, which will be very motivating. You will also feel very satisfied and proud when you reach a goal.</p>
-    </section>
+    <br>
+    <br>
+
+    <!-- QUIZ -->
+        <div class="container">
+            <div id="question-container" class="hide">
+                <div id="question" class="question">Question</div>
+                <div id="answer-buttons" class="btn-grid">
+                    <button class="btn">Answer 1</button>
+                    <button class="btn">Answer 2</button>
+                    <button class="btn">Answer 3</button>
+                    <button class="btn">Answer 4</button>
+                </div>
+            </div>
+            <div class="controls">
+                <button id="start-btn" class="start-btn btn">Start</button>
+                <button id="next-btn" class="next-btn btn hide">Next</button>
+            </div>
+        </div>
+    </div>
     
+    <!-- JavaScript for Quiz -->
+    <script src="script.js"></script>
+
 </body>
 </html>
