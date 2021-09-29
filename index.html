@@ -6,30 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- responsive -->
     <title>Money Management</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- link to icons -->
 </head>
 
-<body>
-    <!-- NAV BAR START -->
+<body style="margin:0"> 
+    <!-- NAV BAR -->
     <header>
-        <section class="header" title="Background image: found on Unsplash, taken by Sergei Akulich. Description: forest in the mountains during sunset">
-            <div class="navbar">
-                <a href="index.html" class="active">Home</a>
-                <a href="saving.html">Saving</a>
-                <a href="budgeting.html">Budgeting</a>
-                <a href="loans.html">Loans</a>
-            </div>
+        <section class="home" title="Background image: found on Unsplash, taken by Sergei Akulich. Description: forest in the mountains during sunset">
+            <nav>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i> <!-- close menu icon -->
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="saving.html">Saving</a></li>
+                        <li><a href="budgeting.html">Budgeting</a></li>
+                        <li><a href="loans.html">Loans</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i> <!-- open menu icon -->
+            </nav>
         </section>
     </header>
-    <!-- NAV BAR END -->
+    <!-- Styling for Home Page Nav Bar -->
+    <style>
+        .home {
+            background-image: linear-gradient(rgba(33, 36, 46, 0.7),rgba(33, 36, 46, 0.7)), url(img/sergei-akulich-unsplash.png);
+            background-position: center;
+            background-size: cover;
+            min-height: 100vh;
+            position: relative;
+            width: 100%;
+        }
+    </style>
 
     <!-- HEADING: WELCOME -->
     <section class="welcome">
-        <h1>Welcome to your managing money journey!</h1>
+        <h1 style="padding:10px">Welcome to your managing money journey!</h1>
         <br>
-        <p>This year, as part of my digital technology class project, I had to create an educational digital outcome. So, for my educational topic, I chose money management.</p>
-        <p>In my website, there are information about things like savings, budgeting and loans, and some activities that can help you better understand these skills.</p>
+        <p>Start learning about saving, budgeting and money loans today!</p>
+        <a href="about.html" class="hero-btn">About Us</a>
+        
     </section>
 
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        function showMenu () {
+            navLinks.style.right = "0";
+        }
+        function hideMenu () {
+            navLinks.style.right = "-200px";
+        }
+    </script>
 </body>
-
 </html>
