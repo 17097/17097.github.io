@@ -269,9 +269,6 @@ b {
         margin-right: auto;
         max-width:70vw;
     }
-    .attribute {
-        font-size: 9px;
-    }
     /* quiz */
     .question {
         font-size: 15px;
