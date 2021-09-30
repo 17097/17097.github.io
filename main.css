@@ -14,6 +14,12 @@ html {
     max-width: 80vw;
 }
 
+/* ???
+.header {
+    background-color:#2B3B50;
+    display: block;
+} */
+
 /* --- NAV BAR --- */
 nav {
     align-items: center;
@@ -88,6 +94,35 @@ nav .fa {
     opacity: 0.7;
     transition: 0.5s;
 }
+
+/* --- IMAGES --- */
+.image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width:60%;
+}
+.attribute {
+    font-size: 13px;
+    text-align: center;
+}
+.attribute2 {
+    bottom: 0;
+    color: white;
+    position: fixed;
+    font-size: 13px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.attribute2 a {
+    color: lightskyblue;
+}
+/*
+.image1 {
+    float: right;
+    max-width: 20%;
+} */
+
 
 /* --- QUIZ --- */
 *, *::before, *::after {
@@ -174,13 +209,6 @@ nav .fa {
     font-weight: 600;
 }
 
-.icons .fa {
-    color: #EA4F5B;
-    margin: 0 13px;
-    cursor: pointer;
-    padding: 18px 0;
-}
-
 /* --- TEXT STYLINGS --- */
 /* heading 1 */
 h1 {
@@ -218,6 +246,12 @@ b {
 @media(max-width: 700px) {
     /* nav bar */
     .welcome h1 {
+        font-size: 30px;
+    }
+    .welcome p {
+        font-size: 17px;
+    }
+    .hero-btn {
         font-size: 18px;
     }
     .nav-links ul li {
@@ -244,6 +278,33 @@ b {
     .nav-links ul {
         padding: 30px;
     }
+    h1 {
+        font-size: 30px;
+    }
+    /* heading 2 */
+    h2 {
+        font-size: 21px;
+    }
+    /* paragraph */
+    p{
+        font-size: 15px;
+    }
+    .list{
+        font-size: 15px;
+    }
+    .image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width:70vw;
+    }
+    .attribute {
+        font-size: 9px;
+    }
+    /* ???
+    .header {
+        display: none;
+    } */
     /* quiz */
     .question {
         font-size: 10px;
