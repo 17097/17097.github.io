@@ -270,7 +270,7 @@ b {
         max-width:70vw;
     }
     /* quiz */
-    .question {
+    .container {
         font-size: 15px;
     }
 }
