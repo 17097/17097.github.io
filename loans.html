@@ -24,6 +24,16 @@
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
     </header>
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        function showMenu () {
+            navLinks.style.right = "0";
+        }
+        function hideMenu () {
+            navLinks.style.right = "-200px";
+        }
+    </script>
     
     <div class="content">
         <h1>Loan</h1>
@@ -36,18 +46,6 @@
         <br>
         <img src="img/loan-daniel-thomas-unsplash.png" class="image">
         <div class="attribute">Photo by <a href="https://unsplash.com/@dtbosse?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Daniel Thomas</a> on <a href="https://unsplash.com/s/photos/loan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></div>
-    </div>
-
-    <!-- JavaScript for Toggle Menu -->
-    <script>
-        var navLinks = document.getElementById("navLinks")
-        function showMenu () {
-            navLinks.style.right = "0";
-        }
-        function hideMenu () {
-            navLinks.style.right = "-200px";
-        }
-    </script>
-    
+    </div>    
 </body>
 </html>

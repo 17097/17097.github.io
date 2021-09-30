@@ -14,12 +14,6 @@ html {
     max-width: 80vw;
 }
 
-/* ???
-.header {
-    background-color:#2B3B50;
-    display: block;
-} */
-
 /* --- NAV BAR --- */
 nav {
     align-items: center;
@@ -117,12 +111,6 @@ nav .fa {
 .attribute2 a {
     color: lightskyblue;
 }
-/*
-.image1 {
-    float: right;
-    max-width: 20%;
-} */
-
 
 /* --- QUIZ --- */
 *, *::before, *::after {
@@ -196,21 +184,7 @@ nav .fa {
     display: none;
 }
 
-/* --- FOOTER --- */
-.footer {
-    background-color: #F3F3F3;
-    padding: 30px 0;
-    text-align: center;
-    width: 100%;
-}
-.footer h2 {
-    margin-bottom: 25px;
-    margin-top: 20px;
-    font-weight: 600;
-}
-
 /* --- TEXT STYLINGS --- */
-/* heading 1 */
 h1 {
     color: #EA4F5B;
     font-family: 'Josefin Sans Black', sans-serif;
@@ -218,15 +192,13 @@ h1 {
     padding: 30px 0;
     text-align: center;
 }
-/* heading 2 */
 h2 {
     color: #54B4B4;
     font-family: 'PT Sans', sans;
     font-size: 28px;
     padding-bottom: 5px;
 }
-/* paragraph */
-p{
+p {
     color: black;
     font-family: 'Roboto', sans-serif;
     font-size: 19px;
@@ -278,14 +250,13 @@ b {
     .nav-links ul {
         padding: 30px;
     }
+    /* text */
     h1 {
         font-size: 30px;
     }
-    /* heading 2 */
     h2 {
         font-size: 21px;
     }
-    /* paragraph */
     p{
         font-size: 15px;
     }
@@ -301,10 +272,6 @@ b {
     .attribute {
         font-size: 9px;
     }
-    /* ???
-    .header {
-        display: none;
-    } */
     /* quiz */
     .question {
         font-size: 10px;

@@ -60,7 +60,6 @@ function selectAnswer(e) {
         startButton.innerText = 'Restart'
         startButton.classList.remove('hide')
     }
-    
 }
 
 function setStatusClass(element, correct) {
